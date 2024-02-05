@@ -1,0 +1,36 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: theamleaf_k8s_deployment
+spec:
+  selector:
+    matchLabels:
+      app: theamleaf_k8s
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: theamleaf_k8s
+    spec:
+      containers:
+        - name: theamleaf_k8s
+          image: ansarshaik/thymeleaf
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8089
+
+
+---
+
+appVersion: v1
+kind: Service
+metadata:
+  name: theamleaf_k8s_svc
+spec:
+  selector:
+    app: theamleaf_k8s
+  ports:
+    - protocol: "TCP"
+      port: 8089
+      targetPort: 8089
+  type: NodePort
