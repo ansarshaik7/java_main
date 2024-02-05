@@ -1,4 +1,4 @@
-# From import java image
+# From import java images
 FROM openjdk:8-jdk-alpine
 
 # Set the Working app directory
