@@ -15,7 +15,8 @@ spec:
       containers:
         - name: theamleaf-k8s
           image: ansarshaik/thymeleaf:latest
-          imagePullPolicy: IfNotPresent
+          # imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8089
 
