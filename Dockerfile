@@ -10,8 +10,5 @@ COPY . /app
 # Port Exposes
 EXPOSE 8089
 
-# Add target directory
-ADD target/thymeleaf.jar thymeleaf.jar
-
 # Run the command to start the spring boot applicaltion
 CMD ["java", "-jar", "thymeleaf.jar"]
