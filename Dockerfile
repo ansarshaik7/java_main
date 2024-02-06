@@ -11,4 +11,4 @@ COPY . /app
 EXPOSE 8089
 
 # Run the command to start the spring boot applicaltion
-ENTRYPOINT ["java", "-jar", "thymeleaf-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "thymeleaf.jar"]

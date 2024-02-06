@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: theamleaf-k8s
-          image: ansarshaik/thymeleaf-0.0.1-SNAPSHOT:latest
+          image: ansarshaik/thymeleaf:latest
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:
