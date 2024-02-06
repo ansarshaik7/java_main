@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the current application files into Container /app
 COPY . /app
 
+# Copy the jarfile from target to container
+COPY target/thymeleaf-0.0.1-SNAPSHOT.jar /app/thymeleaf.jar
+
 # Port Exposes
 EXPOSE 8089
 
