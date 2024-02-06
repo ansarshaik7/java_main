@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bezkoder</groupId>
-	<artifactId>thymeleaf-file-upload</artifactId>
+	<artifactId>thymeleaf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>thymeleaf-file-upload</name>
+	<name>thymeleaf</name>
 	<description>Thymeleaf File Upload in Spring Boot example</description>
 	<properties>
 		<java.version>1.8</java.version>
