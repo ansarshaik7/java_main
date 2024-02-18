@@ -15,26 +15,26 @@ spec:
       containers:
         - name: theamleaf-k8s
           image: ansarshaik/thymeleaf:latest
-          # imagePullPolicy: IfNotPresent
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
+          # imagePullPolicy: Always
           ports:
             - containerPort: 8023
-          resources:
-            limits:
-              cpu: "0.5"
-              memory: "512Mi"
-          readinessProbe:
-            httpGet:
-              path: /healthz
-              port: 8023
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /healthz
-              port: 8023
-            initialDelaySeconds: 10
-            periodSeconds: 20
+          # resources:
+          #   limits:
+          #     cpu: "0.5"
+          #     memory: "512Mi"
+          # readinessProbe:
+          #   httpGet:
+          #     path: /healthz
+          #     port: 8023
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 10
+          # livenessProbe:
+          #   httpGet:
+          #     path: /healthz
+          #     port: 8023
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 20
 
 
 ---
