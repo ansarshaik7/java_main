@@ -18,7 +18,7 @@ spec:
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 8023
           resources:
             limits:
               cpu: "0.5"
@@ -26,13 +26,13 @@ spec:
           readinessProbe:
             httpGet:
               path: /healthz
-              port: 8080
+              port: 8023
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 8080
+              port: 8023
             initialDelaySeconds: 10
             periodSeconds: 20
 
@@ -48,6 +48,6 @@ spec:
     app: theamleaf-k8s
   ports:
     - protocol: "TCP"
-      port: 8089
-      targetPort: 8080
+      port: 8023
+      targetPort: 8023
   type: NodePort

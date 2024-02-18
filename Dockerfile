@@ -11,7 +11,7 @@ COPY . /app
 COPY target/thymeleaf-0.0.1-SNAPSHOT.jar /app/thymeleaf.jar
 
 # Port Exposes
-EXPOSE 8089
+EXPOSE 8023
 
 # Run the command to start the spring boot applicaltion
 ENTRYPOINT ["java", "-jar", "thymeleaf.jar"]
