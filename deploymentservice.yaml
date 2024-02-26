@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: theamleaf-k8s
-          image: ansarshaik/thymeleaf
+          image: ansarshaik/thymeleaf900896635518.dkr.ecr.ap-south-1.amazonaws.com/thymeleaf:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8089
@@ -33,4 +33,5 @@ spec:
     - protocol: "TCP"
       port: 8089
       targetPort: 8089
+      nodePort: 32055
   type: NodePort
