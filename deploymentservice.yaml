@@ -15,7 +15,7 @@ spec:
       containers:
       - name: theamleaf-k8s
         image: 900896635518.dkr.ecr.ap-south-1.amazonaws.com/thymeleaf:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 8089
 
