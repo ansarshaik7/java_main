@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: theamleaf-k8s
-        image: 900896635518.dkr.ecr.ap-south-1.amazonaws.com/thymeleaf@sha256:9d0958d8d128e2623fba1f12edfce5bf6a3e339c08d2de1901855aa13545bac8
+        image: 900896635518.dkr.ecr.ap-south-1.amazonaws.com/thymeleaf:latest
         ports:
         - containerPort: 8089
 ---
